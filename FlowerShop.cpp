@@ -7,17 +7,13 @@
 
 #include "FlowerShop.h"
 
-FlowerShop::FlowerShop ()
-{
+FlowerShop::FlowerShop () {
     
 }
 
-void FlowerShop::printMostExpensive()
-{
-    for (int i=0; i<flowers.size(); i++)
-    {
-        for (int j=0; j<flowers.size() -1; j++)
-        {
+void FlowerShop::printMostExpensive() {
+    for (int i=0; i<flowers.size(); i++) {
+        for (int j=0; j<flowers.size() -1; j++) {
             if (flowers[j].getPrice() < flowers[j+1].getPrice()) {
                 Flower temp = flowers[j];
                 flowers[j] = flowers[j+1];
@@ -29,7 +25,6 @@ void FlowerShop::printMostExpensive()
 
 
 
-void FlowerShop::remove(Flower flower)
-{
+void FlowerShop::remove(Flower flower) {
     flowers.pop_back();
 }

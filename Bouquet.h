@@ -10,16 +10,13 @@
 #include <vector>
 #include "Flower.h"
 
-class Bouquet
-{
+class Bouquet {
 private:
-    
     std::vector<Flower> flowers;
     
 public:
     Bouquet();
-    void add(Flower flower);
+    void add_flower(Flower flower);
     float calculatePrice();
-    
 };
 #endif /* Bouquet_h */

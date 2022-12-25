@@ -11,8 +11,7 @@
 #include "Bouquet.h"
 
 
-int main()
-{
+int main() {
     Flower rose = Flower(70, 5, RED, 40, 3, 150);
     Flower cactus = Flower(10, 4, GREEN, 25, 16, 100);
     Flower chamomile = Flower(75, 12, WHITE, 15, 6, 80);
@@ -23,7 +22,5 @@ int main()
     bouquet.add(chamomile);
     
     std::cout << bouquet.calculatePrice() << std::endl;
-    
-    
 }
 

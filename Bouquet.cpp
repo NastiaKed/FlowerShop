@@ -7,21 +7,18 @@
 #include <iostream>
 #include "Bouquet.h"
 
-Bouquet::Bouquet ()
-{
+Bouquet::Bouquet () {
     
 }
 
-void Bouquet::add(Flower flower)
-{
+void Bouquet::add(Flower flower) {
     flowers.push_back(flower);
 }
 
-float Bouquet::calculatePrice ()
-{
+float Bouquet::calculatePrice () {
     float sum = 0;
-    for (int i=0; i<flowers.size() ; i++ )
-    {
+    for (int i=0; i<flowers.size() ; i++ ) {
         sum += flowers[i].getPrice()*flowers[i].getQuantity();
     }
+    return sum;
 }

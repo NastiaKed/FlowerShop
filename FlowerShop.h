@@ -10,21 +10,16 @@
 #include <vector>
 #include "Flower.h"
 
-class FlowerShop
-{
+class FlowerShop {
     
 private:
-    
     std::vector<Flower> flowers;
     
 public:
-    
     FlowerShop ();
     void printMostExpensive();
     void add(Flower flower);
   void remove(Flower flower);
-    
-    
 };
 
 #endif /* FlowerShop_h */

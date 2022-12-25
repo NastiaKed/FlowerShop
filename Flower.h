@@ -9,8 +9,7 @@
 
 #define Flower_h
 
-enum Color
-{
+enum Color {
     RED,
     WHITE,
     BLUE,
@@ -21,8 +20,7 @@ enum Color
     PURPLE
 };
 
-class Flower
-{
+class Flower {
 private:
     int height;
     int size;
